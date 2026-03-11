@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+    <servlet>
+        <servlet-name>ReportServlet</servlet-name>
+        <servlet-class>servlet.ReportServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ReportServlet</servlet-name>
+        <url-pattern>/report</url-pattern>
+    </servlet-mapping>
+	<servlet>
+    <servlet-name>FilterServlet</servlet-name>
+    <servlet-class>servlet.FilterServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	    <servlet-name>FilterServlet</servlet-name>
+	    <url-pattern>/filter</url-pattern>
+	</servlet-mapping>
+	<servlet>
+    <servlet-name>EmployeeApiServlet</servlet-name>
+    <servlet-class>servlet.EmployeeApiServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	    <servlet-name>EmployeeApiServlet</servlet-name>
+	    <url-pattern>/api/employees</url-pattern>
+	</servlet-mapping>
+</web-app>
